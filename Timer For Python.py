@@ -12,18 +12,19 @@ class Timer:
         return False
 
 # To test/show usage of the timer class
-import time     
- 
-timer = Timer(time_between=2)
-time.sleep(3)
-if timer.can_use():
-    print("worked after 3 seconds")
-time.sleep(1)
-if timer.can_use():
-    print("worked after 4 seconds")
-  
-time.sleep(3):
-    print("worked after 7 seconds")
+if __name__ == "__main__":
+    import time     
+
+    timer = Timer(time_between=2)
+    time.sleep(3)
+    if timer.can_use():
+        print("worked after 3 seconds")
+    time.sleep(1)
+    if timer.can_use():
+        print("worked after 4 seconds")
+
+    time.sleep(3):
+        print("worked after 7 seconds")
   
 # Output:
 # worked after 3 seconds
